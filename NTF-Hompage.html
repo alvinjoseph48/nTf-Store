@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-    <! AOF active faih-->
+    <!-- AOF active faih  -->
     <title>NTF Clothing </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,30 +10,43 @@
     <meta content="NTF Clothing stands for New Treasure Found.  name="description">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/png" href="resources/favicon.ico"/>
 
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
     <link rel="stylesheet" href="./Styling/homePage.css">
 </head>
 <body>
-  <ul class="navBar" role="navigation">
-    <li> Men 
-    	
-    			<div>
-					<ul>
-						<li><a href="#">Me</a></li>
-						<li><a href="#">Gaming</a></li>
-						<li><a href="#">Sport</a></li>
-						<li><a href="#">Web Design</a></li>
-						<li><a href="#">Web Development</a></li>
-					</ul>
-				</div>
-	</li>
-    <li> Women  </li>
-    <li> Youth </li>
-    <li> Accessories </li>
-    <li><form> <input placeholder="search NTF"/><i class="fa fa-search"></i></form></li>
-    <li><i class="fa fa-user-circle-o"></i></li>
-    <i class="fa fa-shopping-cart" style="font-size:20px;color:red"></i>
+   
+   
+   
  </ul>
+ <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a class="brand-logo"> <img src="resources/angel_cs3_icon.ico" alt="AOF Logo"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="user.html"> <i class="fa fa-user-circle-o">  </i> </a></li>
+        <li><a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:20px;color:red"> </i></a></li>
+		<li> <form> <input placeholder="search AOF"/>  </form></li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a class="active" href="#test1">Men</a></li>
+        <li class="tab"><a class="active" href="#test2">Women</a></li>
+        <li class="tab disabled"><a class="active" href="#test3">Youth </a></li>
+        <li class="tab"><a class="active" href="#test4">Acessories </a></li>
+      </ul>
+    </div>
+ </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html"><i class="fa fa-user-circle-o"></i> </a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">JavaScript</a></li>
+  </ul>
 
 </body>
 </html>
