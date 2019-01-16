@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+<body>
+	<div id="navPlaceholder">
+	</div>
+
+<div id="link3" class="shippingSection">
+  <h2>USA Shipping</h2>
+  <p>We Ship to all 50 states; We do not ship international.</p>
+  <hr>
+  <p>Your Shipping charge will vary depending on weight of your package and will be calcuated before you complete your order.</p>
+  <p>Please allow 3 busness day to process and ship, this does not include the delivery time.</p>
+  <p>Shipping time varies from 3 days to 2 weeks. </p>
+</div>
+
+</body>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+$.get("nav.html", function(data){
+    $("#navPlaceholder").replaceWith(data);
+});
+</script>

@@ -189,7 +189,6 @@ nav ul {
   position: absolute;
   top: 0;
 }
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -222,6 +221,23 @@ nav ul {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+#link2, #link3, #link4 {display: none;}
+
+.shippingSection h2{
+    margin:0;
+    padding:30px;
+    color: black;
+    font-size:4em;
+    text-align: center;
+    align-items: center;
+}
+.shippingSection p{
+    color: black;
+    font-size:1em;
+    font-weight:700;
+    padding:1em;
+    padding-top:.25em
 }
 footer{
   background-color: black;
