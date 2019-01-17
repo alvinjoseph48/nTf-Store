@@ -17,12 +17,12 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
-    <link rel="stylesheet" href="Styling/homePage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="Styling/homepage.css">
 </head>
 <body>
-   
-  
+
+
 <nav class="nav-extended">
     <div class="nav-wrapper">
       <a class="brand-logo"> <img src="resources/angel_cs3_icon.ico" alt="AOF Logo"></a>
@@ -113,26 +113,11 @@
 
 <!-- The dots/circles -->
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
 </div>
-</div>
-
-<div id="link2">
-  
-</div>
-<div id="link3" class="shippingSection">
-  <h2>USA Shipping</h2>
-  <p>We Ship to all 50 states; We do not ship international.</p>
-  <hr>
-  <p>Your Shipping charge will vary depending on weight of your package and will be calcuated before you complete your order.</p>
-  <p>Please allow 3 busness day to process and ship, this does not include the delivery time.</p>
-  <p>Shipping time varies from 3 days to 2 weeks. </p>
-</div>
-<div id="link4">
-  3
 </div>
 
 	<footer class="footer" >
@@ -148,7 +133,7 @@
  					<ul>
  						<li><a href="#top"  class="question1" > HOME</a></li>
 						<li><a href=""  class="question2"  >STUDENT DISCOUNT</a></li>
-						<li><a href=""  class="question3" >SHIPPING</a> </li>
+						<li><a href="shipping.html"  class="question3" >SHIPPING</a> </li>
 						<li><a href=""  class="question4">RETURNS</a> </li>
 					</ul>
   			</div>
@@ -199,15 +184,15 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
 </script>
@@ -226,14 +211,14 @@ function showSlides() {
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) {slideIndex = 1}
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
@@ -248,4 +233,4 @@ function showSlides() {
 });
 </script>
 </body>
-</html> 
+</html>
