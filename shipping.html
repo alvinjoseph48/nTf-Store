@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<title>Shipping</title>
+   <meta charset="utf-8">
 
+  	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+ 
+
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/png" href="resources/favicon.ico"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./Styling/homePage.css">
+    <link rel="stylesheet" href="./Styling/shippingPage.css">
 </head>
+
 <body>
-	<div id="navPlaceholder">
-	</div>
+	<div id="navPlaceholder"> </div>
 
 <div id="link3" class="shippingSection">
   <h2>USA Shipping</h2>
@@ -17,11 +33,11 @@
   <p>Shipping time varies from 3 days to 2 weeks. </p>
 </div>
 
-</body>
-
-<script src="//code.jquery.com/jquery.min.js"></script>
 <script>
-$.get("nav.html", function(data){
-    $("#navPlaceholder").replaceWith(data);
+$(function() {
+    $("#navPlaceholder").load("./HtmlCode/nav.html");
 });
 </script>
+
+</body>
+</html>
