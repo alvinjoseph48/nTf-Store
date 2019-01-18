@@ -13,6 +13,8 @@ html{
 }
 .shippingSection{
 	display: block;
+	text-align: left;
+
 }
 .shippingSection h2{
     margin:0;
@@ -22,10 +24,34 @@ html{
     text-align: center;
     align-items: center;
 }
-.shippingSection p{
+.shippingSection h3{
+    margin:0;
+    padding:30px;
+    color: black;
+    font-size:2em;
+    text-align: left;
+    padding-left: 12.4em;
+}
+.shippingSection h4{
+    color: red;
+    margin:0;
+    padding:20px;
     color: black;
     font-size:1em;
-    font-weight:700;
-    padding:1em;
-    padding-top:.25em
+    padding-left: 25em;
+    font-weight: bold;
+    font-family: 'Gotham Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.shippingSection p{
+    color: black;
+    padding-top:.25em;
+    margin: 0;
+    padding-left: 25em;
+    padding-right: 25em;
+}
+.shippingSection hr{
+    width: 51em;
+    height: .5em;
+    color: #f00;
+    background-color: #f00;
 }
