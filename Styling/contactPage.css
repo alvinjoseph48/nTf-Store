@@ -42,6 +42,17 @@ h2{
     color: navy;
     background-color: navy;
 }
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: gray;
+  padding: 1em;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
 @media only screen and (max-width: 1000px) {
 .sideBar{
     padding: 5%;
