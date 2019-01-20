@@ -1,6 +1,8 @@
 function loadPage(){
     $("#navPlaceholder").load("./HtmlCode/nav.html");
     $("#footerPlaceholder").load("./HtmlCode/footer.html");
+   //   $("#navPlaceholder").load("http://localhost:8000/HtmlCode/nav.html");
+  //  $("#footerPlaceholder").load("http://localhost:8000/HtmlCode/footer.html");
 }
 
 
