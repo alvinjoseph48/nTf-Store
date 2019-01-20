@@ -15,17 +15,59 @@ html{
 	text-align: left;
 	align-items: left;
 }
+.col1, .col3{
+  width: 30%;
+}
+.col2{
+  width: 40%;
+}
+.nameContainer{
+  display: flex;
+  width: 100%;
+}
+.nameContainer1{
+  display: none;
+}
+form{
+  padding: 10px;
+  width: 100%;
+}
+label {
+  padding-top: 1em;
+  padding-right: 4.5em;
+  font-size: 1.5em;
+}
+option{
+    font-size: 1.5em;
+}
+.lName{
+  width: 50%;
+  padding-left: 2.5em;
+}
+input {
+  padding: 4em;
+  width: 20%;
+}
+.pad{
+  padding-left: 3em;
+  padding-right: 1em;
+}
 .leftsidebar{
-    padding: 12%;
+    padding: 15%;
 }
 .Rightsidebar{
-    padding: 12%;
+    padding: 15%;
 }
-.contactForm{
-	align-items: left;
+.col2{
+  margin: 1em;
+  border:3px solid black;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	padding: 4em;
+	padding: 2em;
+}
+select{
+  padding: .25em;
+  display: block;
 }
 h2{
 	color: navy;
@@ -39,26 +81,67 @@ h2{
 .pageContainer hr{
 	width: 100%;
     height: .50em;
-    color: navy;
-    background-color: navy;
+    color: orange;
+    background-color: orange;
+}
+textarea{
+  padding: 1em;
 }
 .block {
+  color:white;
   display: block;
   width: 100%;
   border: none;
-  background-color: gray;
+  background-color: black;
   padding: 1em;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
 }
-
-@media only screen and (max-width: 1000px) {
-.sideBar{
-    padding: 5%;
-}
-.Rightsidebar{
-    padding: 5%;
+.block:hover{
+  background-color: red;
 }
 
+.styled-select {
+   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+   height: 29px;
+   overflow: hidden;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+}
+
+.styled-select.slate {
+   background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+   height: 34px;
+}
+
+.styled-select.slate select {
+   border: 1px solid #ccc;
+   font-size: 16px;
+   height: 34px;
+}
+
+.black select   { color: #fff; }
+
+.black select   { color: #fff; }
+
+
+
+@media only screen and (max-width: 1600px) {
+
+.nameContainer{
+  display: none;
+}
+.nameContainer1{
+  display: block;
+}
+.lName{
+  padding-left: 0em;
+}
 }

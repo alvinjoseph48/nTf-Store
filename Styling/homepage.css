@@ -100,15 +100,11 @@ nav ul {
 .nav > li:hover > ul {
   left: auto;
   padding-top: 5px  ;
-  min-width: 100%;
+
 }
 .nav > li li ul {  border-left:1px solid #fff;}
 
-.nav > li li:hover > ul {
- /* margin-left: 1px */
-  left: 100%;
-  top: -1px;
-}
+
 /* arrow hover styling */
 .nav > li > a:first-child:nth-last-child(2):before {
   border-top-color: #aaa;

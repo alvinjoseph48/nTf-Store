@@ -12,7 +12,8 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/loadPage.js"></script>
+
      <link rel="stylesheet" href="./Styling/contactPage.css">
 
 </head>
@@ -20,35 +21,49 @@
 <body>
 <div id="navPlaceholder"> </div>
 <div class="pageContainer">
-<div class= "leftsidebar">
-  
+<div class= "col1">
+
 </div>
- <div class="contactForm">
+ <div class="col2">
   <h2>Drop us a message</h2>
   <hr>
   <form action="action_page.php">
+    <div class="nameContainer">
+      <label for="fname" class="fName">First Name</label>
+      <div class="pad"> </div>
+      <label for="lname" class="lName">Last Name</label>
+     </div>
+     <div class="nameContainer">
+      <input type="text" id="fname" name="firstname" >
+      <div class="pad"> </div>
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <input type="text" id="lname" name="lastname">
+    </div>
+    <div class="nameContainer1">
+      <label for="fname" class="fName">First Name</label>
+      <input type="text" id="fname" name="firstname" >
+      <label for="lname" class="lName">Last Name</label>
+      <input type="text" id="lname" name="lastname">
+     </div>
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
+    <label>Email*</label>
+    <input type="text" id="emailForm" name="email">
+    <label for="subject">Subject</label>
+    <select name="Please select">
+      <option value="order">Order Delivery</option>
+      <option value="product">Product inquiry</option>
+      <option value="payment">Payment</option>
+     <option value="other">Other</option>
     </select>
 
-    <label for="subject">Subject</label>
+    <label for="subject">Message*</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
- 	<button type="button" class="block">Submit </button> 
+ 	<button type="button" class="block">Submit </button>
 
   </form>
-</div> 
-<div class= "rightSidebar">
-  
+</div>
+<div class= "col3">
+
 </div>
 </div>
 <div id="footerPlaceholder"> </div>
@@ -56,8 +71,5 @@
 </html>
 
 <script>
-  $(function() {
-    $("#navPlaceholder").load("./HtmlCode/nav.html");
-    $("#footerPlaceholder").load("./HtmlCode/footer.html");
-});
+loadPage();
 </script>
