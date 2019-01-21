@@ -10,7 +10,8 @@ html{
     margin:0;
     padding:0;
     overflow-x:hidden
-}.pageContainer{
+}
+.pageContainer{
 	display: flex;
 	text-align: left;
 	align-items: left;

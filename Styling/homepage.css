@@ -17,7 +17,7 @@ ul {
 }
 .nav-wrapper{
   padding: 1em;
-
+  padding-bottom: 1em;
 }
 .nav-wrapper{
   text-align: left;
@@ -26,6 +26,7 @@ ul {
   background-color: black;
   padding: 1em;
   padding-bottom: 2em;
+
 }
 input[type=text] {
   border: 21px solid red;
@@ -36,6 +37,7 @@ nav {
   display: block;
   text-align: center;
   padding-left: 22em;
+
 }
 nav ul {
     margin: 0;
@@ -52,6 +54,7 @@ nav ul {
     font-size: 80%;letter-spacing: 2px;
     text-shadow: 0 -1px 0 #000;
     position: relative;
+
 }
 .nav{
     vertical-align: top;
@@ -227,8 +230,8 @@ footer{
     align-items:center;
     text-align:center;
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/background hd.jpg");
-    padding:0;
-    margin:0
+    padding:2em;
+    margin:0;
 }
 footer p img{
     height:2.5em;
@@ -278,8 +281,8 @@ footer p{
     color:#fff;
     font-size:2em;
     font-weight:700;
-    padding:1em;
-    padding-top:.25em
+    margin: 0px;
+    padding: 30px;
 }
 .footerCol {
   float: left;
